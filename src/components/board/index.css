@@ -1,3 +1,97 @@
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.wrap {
+  width: 960px;
+  min-height: 70vh;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px;
+}
+
 .Board {
-  margin: auto;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 54px;
+}
+
+.board-row {
+	display: flex;
+	flex: 1;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.X {
+  color: green;
+}
+
+.O {
+  color: blue;
+}
+
+.winner {
+	background: red !important;
+	transition: all 500ms ease-in-out;
+}
+
+
+@media (max-width: 992px) {
+  .wrap {
+    padding: 177px 90px 33px 85px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    padding: 100px 80px 33px 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap {
+    padding: 100px 15px 33px 15px;
+  }
 }
